@@ -26,12 +26,11 @@ Clone the repository:
 ## ⚠️ Important Steps Before Starting Minikube
 Refresh Docker group membership  
 The script adds your user to the docker group.
-Run:
 
-log out and back in.
-Without this, Minikube will fail with permission denied on /var/run/docker.sock.
+### log out and back in.
+-Without this, Minikube will fail with permission denied on /var/run/docker.sock.
 
-Verify installations
+### Verify installations
 
 Docker: `docker --version`
 
@@ -39,8 +38,7 @@ kubectl: `kubectl version --client`
 
 Minikube: `minikube version`
 
-Start Minikube with resource limits  
-Always specify memory, CPU, and disk size to avoid exhausting VM resources:
+### Start Minikube with resource limits  
+-Always specify memory, CPU, and disk size to avoid exhausting VM resources:
 
-bash
 `minikube start --driver=docker --memory=2048 --cpus=2 --disk-size=4g`
