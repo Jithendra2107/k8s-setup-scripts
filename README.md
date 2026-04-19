@@ -18,6 +18,7 @@ It is designed for students, developers, and engineers who want a fast way to se
 Clone the repository:
 
 `git clone https://github.com/Jithendra2107/k8s-setup-scripts.git`
+
 `cd k8s-setup-scripts`
 
 ---
