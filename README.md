@@ -16,30 +16,30 @@ It is designed for students, developers, and engineers who want a fast way to se
 ## 🛠️ Installation
 
 Clone the repository:
-```bash
-git clone https://github.com/Jithendra2107/k8s-setup-scripts.git
-cd k8s-setup-scripts
 
-**⚠️ Important Steps Before Starting Minikube
+`git clone https://github.com/Jithendra2107/k8s-setup-scripts.git`
+`cd k8s-setup-scripts`
+
+---
+
+## ⚠️ Important Steps Before Starting Minikube
 Refresh Docker group membership  
 The script adds your user to the docker group.
 Run:
 
-bash
-newgrp docker
-or log out and back in.
+log out and back in.
 Without this, Minikube will fail with permission denied on /var/run/docker.sock.
 
 Verify installations
 
-Docker: docker --version
+Docker: `docker --version`
 
-kubectl: kubectl version --client
+kubectl: `kubectl version --client`
 
-Minikube: minikube version
+Minikube: `minikube version`
 
 Start Minikube with resource limits  
 Always specify memory, CPU, and disk size to avoid exhausting VM resources:
 
 bash
-minikube start --driver=docker --memory=2048 --cpus=2 --disk-size=4g**
+`minikube start --driver=docker --memory=2048 --cpus=2 --disk-size=4g`
