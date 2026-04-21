@@ -26,7 +26,7 @@ echo "✅ Minikube installed successfully."
 
 echo "⚠️ IMPORTANT: You must run 'newgrp docker' or log out and back in before starting Minikube."
 echo "👉 After that, start Minikube with:"
-echo "    minikube start --driver=docker --memory=2048 --cpus=2 --disk-size=6g"
+echo "    minikube start --driver=docker --memory=2048 --cpus=2 --disk-size=4g"
 
 echo "🎉 Setup complete! Docker, kubectl, and Minikube are installed with strict resource limits."
 
